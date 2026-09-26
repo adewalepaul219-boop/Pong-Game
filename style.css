@@ -1,0 +1,152 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #080808;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    padding: 20px;
+}
+
+.game-wrapper {
+    width: 100%;
+    max-width: 900px;
+
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+    margin-bottom: 20px;
+}
+
+.scoreboard div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.scoreboard span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+.scoreboard strong {
+    font-size: 40px;
+}
+
+.vs {
+    opacity: 0.5;
+    font-size: 18px;
+}
+
+#gameCanvas {
+    display: block;
+
+    width: 100%;
+    max-width: 900px;
+
+    aspect-ratio: 16 / 9;
+
+    background: #111;
+
+    border: 2px solid white;
+    border-radius: 12px;
+
+    cursor: none;
+}
+
+.instructions {
+    margin-top: 15px;
+
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+#restartBtn {
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    background: white;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#restartBtn:hover {
+    transform: scale(1.05);
+}
+
+#message {
+    min-height: 25px;
+    margin-top: 12px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+
+    .scoreboard {
+        gap: 35px;
+    }
+
+    .scoreboard strong {
+        font-size: 30px;
+    }
+
+    .instructions {
+        font-size: 11px;
+    }
+
+    #restartBtn {
+        width: 100%;
+    }
+}
+```
